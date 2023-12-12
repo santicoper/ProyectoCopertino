@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simulador de Prestamos</title>
@@ -21,15 +22,15 @@
           <form>
             <div class="form-group">
               <label for="loan-amount">Cantidad del Prestamo</label>
-              <input type="number" class="form-control" id="loan-amount" />
+              <input type="number" class="form-control" id="loan-amount">
             </div>
             <div class="form-group">
               <label for="interest-rate">Tasa de Interes</label>
-              <input type="number" class="form-control" id="interest-rate" />
+              <input type="number" class="form-control" id="interest-rate">
             </div>
             <div class="form-group">
               <label for="loan-term">Plazo del Prestamo (a&ntilde;os)</label>
-              <input type="number" class="form-control" id="loan-term" />
+              <input type="number" class="form-control" id="loan-term">
             </div>
             <button type="submit" class="btn btn-primary mt-3">Guardar</button>
           </form>
@@ -43,11 +44,14 @@
                   <th>A&ntilde;o</th>
                   <th>Saldo Inicial</th>
                   <th>Pago Anual</th>
-                  <th>Interes</th>
+                  <th>Intereses</th>
                   <th>Capital</th>
                   <th>Saldo Final</th>
                 </tr>
               </thead>
+              <tbody id="table-body">
+
+              </tbody>
             </table>
           </div>
         </div>
@@ -59,4 +63,5 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script src="index.js"></script>
 </html>
